@@ -43,6 +43,7 @@ const App: React.FC = () => {
   };
   useEffect(() => {
     fetchQuotes();
+    console.log("generated quote");
   }, []);
 
   const calculateWpm = (input: string, totalTime: number) => {
